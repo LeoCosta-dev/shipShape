@@ -2,8 +2,13 @@ import Button from "../../components/Button/Button";
 import { HomeStyle } from "./HomeStyle";
 import ShipShape from "../../assets/Files/ShipShape_Logo.png"
 import { Link } from "react-router-dom";
+import { NumberQuestionContext } from "../../context/NumberQuestionContext";
+import { useContext } from "react";
+
 
 export default function Home(){
+    const { setNumberQuestion } = useContext(NumberQuestionContext) 
+    setNumberQuestion(0)
     return(
         <HomeStyle>
             <div>
