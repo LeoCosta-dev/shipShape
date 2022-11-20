@@ -1,17 +1,23 @@
+import { useContext, useEffect } from "react";
+import { NumberQuestionContext } from "../../context/NumberQuestionContext";
 import Button from "../Button/Button";
 import { FormsStyle } from "./FormsStyle";
 
-export default function Forms({ question, possibilitys, SetQuestionNumber, questionNumber }) {
+
+export default function Forms({ question, possibilitys }) {
+    
+    const { numberQuestion, setNumberQuestion } = useContext(NumberQuestionContext)
+    
+    useEffect(()=>{}, [numberQuestion])
+
     function next(event){
         event.preventDefault()
-        const newQuestionNumber = questionNumber++
-        SetQuestionNumber(newQuestionNumber)
+        setNumberQuestion(numberQuestion + 1)
     }
 
     function previous(event){
         event.preventDefault()
-        const newQuestionNumber = questionNumber--
-        SetQuestionNumber(newQuestionNumber)
+        setNumberQuestion(numberQuestion - 1)
     }
 
     return (
