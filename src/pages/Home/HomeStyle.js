@@ -6,10 +6,11 @@ export const HomeStyle = styled.div`
     height: 70vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #fffcf7;
-    padding: 0px 10%;
     div{
+        margin-left: 10%;
+        width: 40%;
         max-width: 37rem;
     }
     h4{
@@ -22,10 +23,10 @@ export const HomeStyle = styled.div`
     margin-bottom: 1rem;
     line-height: 4rem;
     }
-    div, p {
+    p {
         margin-bottom: 4rem;
     }
     img{
-        height: 100%;
+        width: 60%;
     }
 `
