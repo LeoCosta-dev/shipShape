@@ -12,11 +12,11 @@ export default function Home(){
     return(
         <HomeStyle>
             <div>
-                <h4 className={HomeStyle.text_h4}>Welcome to ShipShape</h4>
-                <h1 className="text-h1">Your dream, our travel</h1>
-                <p>Come and look what experiences fit you the best 😉</p>
+                <h4 className={HomeStyle.text_h4}>Bem vindo ao ShipShape.</h4>
+                <h1 className="text-h1">Seu sonho, nossa viagem!</h1>
+                <p>Venha viver a experiência feita sob medida para você. 😉</p>
                 <Link to='/questions'>
-                    <Button texto={"Try now"} />
+                    <Button texto={"Testar agora"} />
                 </Link>
             </div>
             <img src={ShipShape} alt="logo" />

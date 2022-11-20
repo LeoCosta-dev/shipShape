@@ -10,7 +10,7 @@ export default function Header(){
                 <img src={tynyLogo} alt="tiny logo" />
             </Link>
             <Link to="/questions">
-                <Button texto={"Try now"} />            
+                <Button texto={"Testar agora"} />            
             </Link>
         </HeaderStyle>
     )
