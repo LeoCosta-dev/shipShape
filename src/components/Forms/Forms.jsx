@@ -1,16 +1,21 @@
+import Button from "../Button/Button";
 import { FormsStyle } from "./FormsStyle";
 
 export default function Forms({ question, possibilitys }) {
     return (
         <FormsStyle>
-            {question}
+            <h2>{question}</h2>
             {possibilitys.map(element => (
-                <div>
+                <section>
                     <input type="radio" name="option" />
                     <label htmlFor="option">{element}</label>
-                </div>
+                </section>
             )
             )}
+            <div>
+                <Button texto={"Voltar"}/>
+                <Button texto={"Próximo"}/>
+            </div>
         </FormsStyle>
     )
 }
