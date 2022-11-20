@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import Home from './pages/Home/HomePage'
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import "./App.css"
+import FormsPage from './pages/Forms/FormsPage';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />}/>
+        <Route path='/questions' element={<FormsPage />}/>
       </Routes>
     </Router>
   )
