@@ -15,7 +15,7 @@ export default function Results (props){
 
             <div>
                 <Button link={'https://www.youtube.com/watch?v=s1JPZZdzCOE%27%7D'} texto={'Tour pelo metaverso'}/>
-                <Link to={'./'}><Button texto={'Tentar novamente'} /></Link>
+                <Link to='/'><Button texto={'Tentar novamente'} /></Link>
             </div>
         </ResultStyle>
     );
