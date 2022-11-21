@@ -7,10 +7,8 @@ import FormsPage from './pages/Forms/FormsPage';
 import { NumberQuestionProvider } from './context/NumberQuestionContext';
 import Results from './pages/Result/Result';
 
-
 function App() {
   const [count, setCount] = useState(0)
-
 
   return (
     <Router className="App">
