@@ -20,9 +20,12 @@ export default function Forms({ question, possibilitys, change }) {
     function next(event){
         event.preventDefault()
         setChosenTags([...chosenTags, tagValue])
-        if(numberQuestion === 9){
-            navigate("/")
-        } else if (numberQuestion >= 5) {
+        if(numberQuestion === 5){
+            navigate("/results")
+        }if(numberQuestion >= 9){
+            navigate("/results")
+        }
+        else if (numberQuestion >= 5) {
             const payload = {chosenTags, refusedCities}
             requestCity(payload).then(response => console.log(response))
         }
@@ -36,8 +39,6 @@ export default function Forms({ question, possibilitys, change }) {
         }
         setNumberQuestion(numberQuestion - 1)
     }
-
-    console.log(chosenTags)
 
     return (
         <FormsStyle>
