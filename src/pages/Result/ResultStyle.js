@@ -10,4 +10,8 @@ export const ResultStyle = styled.div`
         width: 400px;
         border-radius: 15px;
     }
+    div{
+        display: flex;
+        gap: 30px;
+    }
 `
