@@ -1,7 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { NumberQuestionContext } from "../../context/NumberQuestionContext";
-import { requestCity } from "../../request/request";
 import Button from "../Button/Button";
 import { FormsStyle } from "./FormsStyle";
 
@@ -24,10 +23,6 @@ export default function Forms({ question, possibilitys, change }) {
             navigate("/results")
         }if(numberQuestion >= 9){
             navigate("/results")
-        }
-        else if (numberQuestion >= 5) {
-            const payload = {chosenTags, refusedCities}
-            requestCity(payload).then(response => console.log(response))
         }
         setNumberQuestion(numberQuestion + 1)
     }

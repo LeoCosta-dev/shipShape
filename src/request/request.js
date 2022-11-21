@@ -1,12 +1,10 @@
 import axios from "axios";
 
-
-
-export async function requestCity(payload){
-    const url = "https://cors-anywhere.herokuapp.com/https://shipshapetravel.azurewebsites.net/Cities"
+export async function covidRisk(countryCode){
+    const url = `https://shipshapetravel.azurewebsites.net/Covid?country=${countryCode}`
     try {
-        const response = (await axios.post(url, payload)).data
-        return response
+        const response = (await axios.get(url)).data
+        return response?.data?.diseaseRiskLevel?.text
     } catch (error) {
         console.log(error.message);
         return {}
