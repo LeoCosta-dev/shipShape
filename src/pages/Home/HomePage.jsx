@@ -13,7 +13,7 @@ export default function Home(){
         <HomeStyle>
             <div>
                 <h4 className={HomeStyle.text_h4}>Bem vindo ao ShipShape.</h4>
-                <h1 className="text-h1">Seu sonho, nossa viagem!</h1>
+                <h1 className="text-h1">Your Dreams, our travel!</h1>
                 <p>Venha viver a experiência feita sob medida para você. 😉</p>
                 <Link to='/questions'>
                     <Button texto={"Testar agora"} />
